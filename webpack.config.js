@@ -3,6 +3,7 @@ const path = require("path");
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html",
+  favicon: "./src/images/favicon.ico",
 });
 
 module.exports = {
@@ -27,7 +28,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|woff(2)?|ttf|eot|svg)$/,
         loader: "file-loader",
         options: { name: "/static/[name].[ext]" },
       },
