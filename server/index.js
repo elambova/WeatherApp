@@ -144,12 +144,12 @@ app.get("/getInfo", async (req, res, next) => {
       ...(weatherbit !== undefined
         ? {
             weather: weatherbit[0].weather,
-            temp: weatherbit[0].temp,
+            temp: weatherbit[0].temp.toFixed(1),
             city_name: weatherbit[0].city_name,
           }
         : {
             weather: openweather[0].weather,
-            temp: openweather[0].main.temp,
+            temp: openweather[0].main.temp.toFixed(1),
             city_name: openweather[0].name,
           }),
     };
@@ -181,12 +181,12 @@ app.get("/loadData", async (req, res, next) => {
       ...(weatherbit !== undefined
         ? {
             weather: weatherbit[0].weather,
-            temp: weatherbit[0].temp,
+            temp: weatherbit[0].temp.toFixed(1),
             city_name: weatherbit[0].city_name,
           }
         : {
             weather: openweather.weather,
-            temp: openweather.main.temp,
+            temp: openweather.main.temp.toFixed(1),
             city_name: openweather.name,
           }),
       city_name: location.city,
