@@ -9,10 +9,9 @@ const htmlPlugin = new HtmlWebPackPlugin({
 module.exports = {
   entry: "./src/index.js",
   output: {
-    // NEW
     path: path.join(__dirname, "dist"),
     filename: "[name].js",
-  }, // NEW Ends
+  },
   plugins: [htmlPlugin],
   module: {
     rules: [
@@ -24,7 +23,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s?css$/,
+        test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
@@ -33,5 +32,8 @@ module.exports = {
         options: { name: "/static/[name].[ext]" },
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".scss"],
   },
 };
