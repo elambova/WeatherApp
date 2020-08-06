@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`result container render 1`] = `ShallowWrapper {}`;
+
+exports[`result container renders without crashing given the required props 1`] = `
+<Fragment>
+  <h2>
+    Sofia
+     
+  </h2>
+  <h3
+    className="date"
+  >
+    Thu Aug 06 2020
+  </h3>
+  <img
+    alt="Clear sky"
+    src="https://www.weatherbit.io/static/img/icons/c01d.png"
+  />
+  <p>
+    Clear sky
+  </p>
+  <p>
+    Temperature: 
+    <strong />
+     ℃
+  </p>
+  <img
+    alt="Sofia, Bulgaria"
+    id="city-pic"
+    src="https://pixabay.com/get/54e2d3474c54ad14f1dc84609629317f123cd9e4574c704c7c297ad49449c250_640.jpg"
+  />
+  <p
+    className="tags-image"
+  />
+</Fragment>
+`;

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App container render Form Container 1`] = `
+Object {
+  "handleSubmit": [Function],
+}
+`;
+
+exports[`App container render Result Container 1`] = `
+Object {
+  "data": Object {
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "picture": "https://pixabay.com/get/54e2d3474c54ad14f1dc84609629317f123cd9e4574c704c7c297ad49449c250_640.jpg",
+    "weather": Object {
+      "description": "Clear sky",
+      "icon": "c01d",
+    },
+  },
+}
+`;
+
+exports[`App container renders without crashing given the required props 1`] = `
+<Fragment>
+  <form
+    method="POST"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="city"
+      >
+        Please enter city:
+      </label>
+      <input
+        id="city"
+        name="city"
+        onChange={[Function]}
+        placeholder="City"
+        required={true}
+        type="text"
+      />
+    </div>
+    <input
+      id="submit-btn"
+      name="submit"
+      type="submit"
+      value="Enter"
+    />
+  </form>
+</Fragment>
+`;
