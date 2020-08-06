@@ -8,12 +8,12 @@ const headers = {
   Authorization: token,
 };
 
-export const getInfo = (city) =>
-  fetch(`${api}getInfo?city=${city}`, { headers })
+export const getInfo = async (city) =>
+  await fetch(`${api}getInfo?city=${city}`, { headers })
     .then((res) => res.json())
     .then((data) => data);
 
-export const loadData = () =>
-  fetch(`${api}loadData`, { headers })
+export const loadData = async () =>
+  await fetch(`${api}loadData`, { headers })
     .then((res) => res.json())
     .then((data) => data);
