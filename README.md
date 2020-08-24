@@ -1,6 +1,6 @@
 # TravelApp
 
-This project is based to connect to 4 diferents APIs and is build with React / React Components.
+This project is based to connect to 5 diferents APIs and is build with React / React Components.
 
 ## Introduction
 
