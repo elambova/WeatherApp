@@ -1,15 +1,5 @@
 @import "reset.scss";
 
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url(../fonts/CormorantGaramond-Light.ttf);
-}
-
-@font-face {
-  font-family: "Cormorant Garamond Bold";
-  src: url(../fonts/CormorantGaramond-Bold.ttf);
-}
-
 body {
   font: 20px "Cormorant Garamond", serif;
   background-color: aliceblue;
@@ -19,8 +9,9 @@ body {
 #header,
 #footer {
   text-align: center;
-  font-family: "Cormorant Garamond Bold", serif;
+  font-family: "Cormorant Garamond", serif;
   background-color: teal;
+  font-weight: bold;
   width: 100%;
   color: white;
   padding: 20px 0;
@@ -75,7 +66,8 @@ body {
     }
 
     #submit-btn {
-      font: 15px "Cormorant Garamond Bold", serif;
+      font: 15px "Cormorant Garamond", serif;
+      font-weight: bold;
       text-transform: uppercase;
       margin: 10px auto;
       display: block;
